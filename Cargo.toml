@@ -1,0 +1,15 @@
+[package]
+name = "pathtools"
+version = "0.1.0"
+authors = ["rabite <rabite@posteo.de>"]
+edition = "2018"
+description = "Additional helper methods for Path"
+homepage = "https://github.com/rabite0/pathtools"
+repository = "https://github.com/rabite0/pathtools"
+readme = "README.md"
+license = "WTFPL"
+keywords = ["unix", "linux", "filename", "path", "pathbuf"]
+categories = ["filesystem", "value-formatting"]
+
+[dependencies]
+dirs = "1.0"
