@@ -1,5 +1,5 @@
 [package]
-name = "pathbufools"
+name = "pathbuftools"
 version = "0.1.1"
 authors = ["rabite <rabite@posteo.de>"]
 edition = "2018"
