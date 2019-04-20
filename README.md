@@ -15,4 +15,4 @@ fn quoted_file_name(&self) -> Option<OsString>;
 fn quoted_path(&self) -> OsString;
 ```
 
-NOTE: short_path() removes the $HOME component of a Path and replaces it with ~, so "/home/foo/bar" becomes "~/bar".
+NOTE: short_path() removes the $HOME component of a Path and replaces it with \~, so "/home/foo/bar" becomes "\~/bar".
