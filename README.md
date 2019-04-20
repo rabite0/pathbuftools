@@ -1,9 +1,9 @@
-pathtools
+pathtbuftools
 ======
 
-pathtools is a small library that adds some helper methods which are useful when working with Paths.
+pathbuftools is a small library that adds some helper methods which are useful when working with PathBufs.
 
-This mostly usefuly when you're doing low-level stuff on UNIX systems with files. I factored this library out of ![hunter](https://github.com/rabite0/hunter), so for the most part it contains stuff I needed there, plus a bit more I stopped using.
+This mostly usefuly when you're doing low-level stuff with files. I factored this library out of ![hunter](https://github.com/rabite0/hunter), so for the most part it contains stuff I needed there, plus a bit more I stopped using.
 
 Available methods and their singatures are:
 

@@ -127,8 +127,8 @@ version = "0.1.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "pathtools"
-version = "0.1.0"
+name = "pathbufools"
+version = "0.1.1"
 dependencies = [
  "dirs 1.0.5 (registry+https://github.com/rust-lang/crates.io-index)",
 ]

@@ -2,11 +2,11 @@ extern crate dirs;
 
 use dirs::home_dir;
 
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 use std::ffi::{OsStr, OsString};
 use std::os::unix::ffi::{OsStrExt, OsStringExt};
 
-pub trait PathTools {
+pub trait PathBufTools {
     fn short_path(&self) -> PathBuf;
     fn short_string(&self) -> String;
     fn name_starts_with(&self, pat: &str) -> bool;
@@ -14,7 +14,7 @@ pub trait PathTools {
     fn quoted_path(&self) -> OsString;
 }
 
-impl PathTools for Path {
+impl PathBufTools for PathBuf {
     fn short_path(&self) -> PathBuf {
         if let Some(home) = home_dir() {
             if let Ok(short) = self.strip_prefix(home) {
@@ -23,7 +23,7 @@ impl PathTools for Path {
                 return path
             }
         }
-        return self.to_path_buf();
+        return self.clone();
     }
 
     fn short_string(&self) -> String {
@@ -60,7 +60,7 @@ impl PathTools for Path {
     }
 
     fn quoted_path(&self) -> OsString {
-        let mut path = self.to_path_buf().into_os_string().as_bytes().to_vec();
+        let mut path = self.as_os_str().to_os_string().into_vec();
         let mut quote = "\"".as_bytes().to_vec();
 
         let mut quoted = vec![];

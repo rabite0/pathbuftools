@@ -1,11 +1,11 @@
 [package]
-name = "pathtools"
-version = "0.1.0"
+name = "pathbufools"
+version = "0.1.1"
 authors = ["rabite <rabite@posteo.de>"]
 edition = "2018"
-description = "Additional helper methods for Path"
-homepage = "https://github.com/rabite0/pathtools"
-repository = "https://github.com/rabite0/pathtools"
+description = "Additional helper methods for PathBuf"
+homepage = "https://github.com/rabite0/pathbuftools"
+repository = "https://github.com/rabite0/pathbuftools"
 readme = "README.md"
 license = "WTFPL"
 keywords = ["unix", "linux", "filename", "path", "pathbuf"]
