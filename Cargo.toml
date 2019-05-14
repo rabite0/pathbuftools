@@ -1,6 +1,6 @@
 [package]
 name = "pathbuftools"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["rabite <rabite@posteo.de>"]
 edition = "2018"
 description = "Additional helper methods for PathBuf"
